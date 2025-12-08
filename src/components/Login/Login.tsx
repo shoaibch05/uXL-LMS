@@ -1,13 +1,13 @@
 import lms from "../../assets/lms.png";
 const Login = () => {
   return (
-    <div className="flex">
-      <div className="w-[50vw] h-screen border-amber-600 text-white bg-blue-800 flex flex-col justify-center items-center">
+    <div className=" flex">
+      <div className="w-[50vw] h-screen text-white bg-blue-800 flex flex-col justify-center items-center">
         <img src={lms} height={"50px"} width={"50px"} alt="not found" />
         <h1 className="text-3xl font-bold ">uXL LMS 360</h1>
         <h5>Global Learning Network</h5>
       </div>
-      <div className="w-[50vw] h-screen bg-gray-300 flex flex-col justify-center items-center">
+      <div className="w-[50vw] h-screen  flex flex-col justify-center items-center">
         <form
           action="#"
           method="get"

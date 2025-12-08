@@ -4,7 +4,7 @@ import SignUp from "./components/SignUp/SignUp";
 
 export const App = () => {
   return (
-    <div>
+    <div className="bg-[#f5f5f7]">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SignUp />} />

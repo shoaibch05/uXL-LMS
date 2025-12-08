@@ -17,7 +17,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="bg-blue-200 w-screen h-full">
+    <div className="w-full h-full">
       <main className="flex flex-col justify-center items-center p-5">
         <img src={lms} height={"50px"} width={"50px"} alt="not found" />
         <h1 className="text-3xl font-bold ">Create New Account</h1>
@@ -33,7 +33,7 @@ const SignUp = () => {
         >
           <Form.Item
             name="email"
-            label="E-mail"
+            label="E-mail Address"
             style={{ marginBottom: "0px" }}
             rules={[
               {
@@ -46,7 +46,7 @@ const SignUp = () => {
               },
             ]}
           >
-            <Input />
+            <Input placeholder="Enter your Email Address" />
           </Form.Item>
 
           <Form.Item
@@ -71,7 +71,7 @@ const SignUp = () => {
             ]}
             hasFeedback
           >
-            <Input.Password />
+            <Input.Password placeholder="Enter your password" />
           </Form.Item>
 
           <Form.Item
@@ -97,14 +97,21 @@ const SignUp = () => {
               }),
             ]}
           >
-            <Input.Password />
+            <Input.Password placeholder="Confirm your Password" />
           </Form.Item>
 
           <Button type="primary" htmlType="submit">
             Create Account
           </Button>
 
-          <Divider style={{ margin: "4px 0px" }}>OR</Divider>
+          <Divider
+            style={{
+              margin: "4px 0px",
+              borderColor: "red",
+            }}
+          >
+            OR
+          </Divider>
           <div className="flex flex-col gap-1">
             <Button
               type="default"
