@@ -56,7 +56,7 @@ const StudentLogin = () => {
                 marginBottom: "16px",
               }}
             >
-              <Link href="#">Forgot Password?</Link>
+              <Link href="/Forgot_Password">Forgot Password?</Link>
             </div>
             <Button
               type="primary"

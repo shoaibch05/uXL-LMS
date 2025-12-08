@@ -33,7 +33,10 @@ const Login = () => {
               placeholder="Password"
               className="border border-gray-300 p-2 rounded"
             />
-            <a href="#" className="text-right text-blue-500 text-sm">
+            <a
+              href="/Forgot_Password"
+              className="text-right text-blue-500 text-sm"
+            >
               Trouble logging In?
             </a>
             <button
