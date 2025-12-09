@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 const SetNewPass = () => {
   const [form] = Form.useForm();
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
 
   // Password validation rules
@@ -38,7 +39,7 @@ const SetNewPass = () => {
 
   useEffect(() => {
     checkFormValidity();
-  }, [password, form]);
+  }, [password, confirmPassword, form]);
 
   const onFinish = (values: any) => {
     console.log("Received values of form: ", values);
@@ -119,7 +120,12 @@ const SetNewPass = () => {
               }),
             ]}
           >
-            <Input.Password placeholder="Confirm your Password" />
+            <Input.Password
+              placeholder="Confirm your Password"
+              onChange={(e) => {
+                setConfirmPassword(e.target.value);
+              }}
+            />
           </Form.Item>
           {/* Password Strength Indicator */}
           {allRulesMet
