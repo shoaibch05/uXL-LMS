@@ -5,6 +5,7 @@ import StudentLogin from "./components/Login/StudentLogin";
 import Forgot from "./components/Login/Forgot_Password/Forgot";
 import EmailSend from "./components/Login/Forgot_Password/EmailSend";
 import SetNewPass from "./components/Login/Forgot_Password/SetNewPass";
+import Dashboard from "./Admin/Dashboard";
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
             path="/forgot_password/email/setup_password"
             element={<SetNewPass />}
           />
+          <Route path="/admin/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>
